@@ -4,12 +4,12 @@ def main():
     females = int(input("Enter the numer of females: "))
 
     total = males+females
-    m_perc = males/total
-    f_perc = females/total
+    m_perc = f"{males/total:.2%}"
+    f_perc = f"{females/total:.2%}"
 
     print(f"The total number of students: \t{total}")
     print(f"The number of males and females \t {males} \t {females}")
-    print(f"The percentage of males and females \t {m_perc:.2%} \t {f_perc:.2%}")
+    print(f"The percentage of males and females \t {m_perc} \t {f_perc}")
     return m_perc, f_perc
 
 
